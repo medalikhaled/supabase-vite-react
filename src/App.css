@@ -1,0 +1,46 @@
+:root {
+  font-size: 16px;
+  --primary-clr: #ff5e62;
+  --secondary-clr: #ff9966;
+  --primary-font: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  color: whitesmoke;
+  background: #111111;
+}
+
+.app {
+  width: 100%;
+  min-width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.inter3x {
+  font-family: var(--primary-font);
+  font-weight: 300;
+  font-size: 3rem;
+}
+.inter8x {
+  font-family: var(--primary-font);
+  font-weight: 800;
+  font-size: 5rem;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #ff9966, #ff5e62);
+  background-clip: text;
+  background: -webkit-linear-gradient(45deg, #ff9966, #ff5e62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid-repeat {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
